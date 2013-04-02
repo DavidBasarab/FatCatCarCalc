@@ -2,6 +2,12 @@ html {
     height: 100%;
 }
 
+.price-slider {
+    margin-top: 30px;
+    margin-left: 112px;
+    margin-right: 40px;
+}
+
 body {
     font-family: source-sans-pro, serif;
     font-size: 16px;
@@ -11,6 +17,22 @@ body {
     background-color: #fff;
     overflow: hidden;
     position: relative;
+}
+
+.slider-label {
+    margin-top: -2px;
+    margin-left: 50px;
+    float: right;
+    width: 50px;
+    border-style: none;
+}
+
+slider-label-text {
+      float: left;
+}
+
+div.price-info {
+    margin-top: -15px;
 }
 
 .header {
