@@ -5,9 +5,28 @@
         <link rel="stylesheet" href="css/style.css"/>
     </head>
     <body>
-        <div class="header">
-            <h1>This will be the FatCat Calculator</h1>
-        </div>
+        <script id="home-template" type="text/x-handlebars-template">
+            <div class="header">
+                <h1>Home</h1>
+            </div>
+            <ul>
+                <li>
+                    {{this.carPrice}}
+                </li>
+                <li>
+                    {{this.tradeInPrice}}
+                </li>
+                <li>
+                    {{this.tradeInAmount}}
+                </li>
+            </ul>
+        </script>
 
+        <script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="lib/handlebars.js"></script>
+        <script type="text/javascript" src="lib/iscroll.js"></script>
+        <script type="text/javascript" src="js/storage/ls-store.js"></script>
+        <script type="text/javascript" src="js/HomeView.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
