@@ -5,35 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>jQuery Mobile: Theme Download</title>
         <link rel="stylesheet" href="css/CarCal.css"/>
+        <link rel="stylesheet" href="css/style.css"></link>
         <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.0.min.css"/>
-
-    </head>
-    <body>
-        <script id="home-template" type="text/x-jsrender">
-            <div id="test-idea" >
-                <div>
-                    {{:#index+1}}: <b>{{>name}}</b> ({{>releaseYear}})
-                </div>
-                <div>
-                    <div data-theme="a">
-                        <p>Your theme was successfully downloaded. You can use this page as a reference for how to link it up!</p>
-
-                        <p>This is content color swatch "A" and a preview of a <a href="#" class="ui-link">link</a>.</p>
-                        <label for="slider1">Input slider:</label>
-                        <input type="range" name="slider1" id="slider1" value="50" min="0" max="100" data-theme="a"/>
-                        <fieldset data-role="controlgroup" data-type="horizontal" data-role="fieldcontain">
-                            <legend>Cache settings:</legend>
-                            <input type="radio" name="radio-choice-a1" id="radio-choice-a1" value="on"
-                                   checked="checked"/>
-                            <label for="radio-choice-a1">On</label>
-                            <input type="radio" name="radio-choice-a1" id="radio-choice-b1" value="off"/>
-                            <label for="radio-choice-b1">Off</label>
-                        </fieldset>
-                    </div>
-                </div>
-            </div>
-        </script>
-
         <script src="lib/jquery-1.9.1.min.js"></script>
         <script src="lib/jquery.mobile-1.3.0.js"></script>
         <script src="lib/jsrender.js"></script>
@@ -42,5 +15,32 @@
         <script type="text/javascript" src="js/storage/ls-store.js"></script>
         <script type="text/javascript" src="js/HomeView.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Monthly Payment</h1>
+        </div>
+        <div class="price-info" data-role="content" data-theme="a">
+            <label for="slider1">
+                Car Price
+            </label>
+            <input type="range" id="carPrice-slider" name="carPrice-slider"  min="0" step="250" max="50000"
+                   data-highlight="a" data-theme="a"/>
+        </div>
+        <div class="price-info" data-role="content" data-theme="a">
+            <label for="tradeIn-slider">
+                Trade-In Value
+            </label>
+            <input type="range" id="tradeIn-slider" name="tradeIn-slider" min="0" step="250" max="20000"
+                   data-highlight="a" data-theme="a"/>
+        </div>
+        <div class="price-info" data-role="content" data-theme="a" style="width: 100px;">
+            <label for="slider3">
+                Trade-In Loan Payoff
+            </label>
+            <input class="payoff"  id="payoff-text" type="text" data-highlight="a" data-theme="a"/>
+        </div>
+
+
     </body>
 </html>

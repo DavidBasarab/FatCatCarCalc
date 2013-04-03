@@ -31,6 +31,10 @@ body {
 
 }
 
+input.payoff {
+    width: 60px;
+}
+
 div.price-info {
     margin-left: 25px;
 }
