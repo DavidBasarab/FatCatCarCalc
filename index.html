@@ -12,27 +12,23 @@
                 <h1>Home</h1>
             </div>
             <div class="price-info">
-                <!--<div>-->
-                    <!--<label class="slider-label-text">Car Price</label>-->
-                <!--</div>-->
-                <!--<input type="text" class="slider-value" id="carPrice" value="{{this.carPrice}}"/>-->
-                <!--<input type="range" class="price-slider" id="carPrice-slider" />-->
-                <!--<label for="carPrice-slider">Car Price</label>-->
-                <!--<input type="range" name="carPrice-slider" id="carPrice-slider" value="25000" min="0" max="50000" />-->
                 <label for="slider">
                     Car Price
                 </label>
-                <input type="range" name="slider" value="25000" min="0" step="250" max="50000" data-highlight="true" data-theme="a" data-track-theme="a" />
+                <input type="range" name="slider" value="{{this.carPrice}}" min="0" step="250" max="50000" data-highlight="true" data-theme="a" data-track-theme="a" />
             </div>
-            <ul>
-                <li>
-                    {{this.tradeInPrice}}
-                </li>
-                <li>
-                    {{this.tradeInAmount}}
-                </li>
-            </ul>
-
+            <div class="price-info">
+                <label for="slider">
+                    Trade-In Value
+                </label>
+                <input type="range" name="slider" value="{{this.tradeInPrice}}" min="0" step="250" max="20000" data-highlight="true" data-theme="a" data-track-theme="a" />
+            </div>
+            <div class="price-info">
+                <label for="slider">
+                    Trade-In Loan Payoff
+                </label>
+                <input type="range" name="slider" value="{{this.tradeInAmount}}" min="0" step="250" max="20000" data-highlight="true" data-theme="a" data-track-theme="a" />
+            </div>
         </script>
 
         <script type="text/javascript" src="phonegap.js"></script>
