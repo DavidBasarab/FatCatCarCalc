@@ -18,21 +18,18 @@ var LocalStorageStore = function (successCallback, errorCallback) {
         }
     }
 
-    this.initialize = function () {
-        var theData = this.getSavedData();
+    var theData = this.getSavedData();
 
-        if (!theData) {
-            var savedData = {
-                "carPrice": 25000,
-                "tradeInPrice": 7000,
-                "tradeInAmount": 5000
-            };
+    if (!theData) {
+        var savedData = {
+            "carPrice": 25000,
+            "tradeInPrice": 7000,
+            "tradeInAmount": 5000,
+            "interest": 8.3
+        };
 
-            this.storeData(savedData);
-        }
-
-        callLater(successCallback);
+        this.storeData(savedData);
     }
 
-    this.initialize();
+    callLater(successCallback);
 }

@@ -32,12 +32,17 @@ body {
 }
 
 input.payoff {
-    width: 60px;
+    width: 40px;
     font-size: 14px;
 }
 
 div.price-info {
     margin-left: 25px;
+}
+
+div.blockInfo {
+    display: inline-block;
+    width: 75px;
 }
 
 .header {

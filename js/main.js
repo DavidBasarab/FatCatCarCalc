@@ -1,4 +1,15 @@
 app = {
+
+    storeData: function (theData) {
+        if (this.store) {
+            this.store.storeData(theData);
+        } else {
+            this.store = new LocalStorageStore(function () {
+                this.store.storeData(theData);
+            });
+        }
+    },
+
     initialize: function () {
         var self = this;
         this.store = new LocalStorageStore(function () {
@@ -8,4 +19,4 @@ app = {
     }
 }
 
-$(app.initialize)
+$(app.initialize);
