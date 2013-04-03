@@ -3,7 +3,7 @@
     <head>
         <title>FatCat Calculator</title>
         <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/jquery-ui.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css"/>
     </head>
     <body>
         <script id="home-template" type="text/x-handlebars-template">
@@ -11,10 +11,10 @@
                 <h1>Home</h1>
             </div>
             <div class="price-info">
-                <div style="float: left;">
-                    <span class="slider-label-text">Car Price</span>
-                    <input type="text" class="slider-label" id="carPrice" value="{{this.carPrice}}" />
+                <div>
+                    <label class="slider-label-text">Car Price</label>
                 </div>
+                <input type="text" class="slider-value" id="carPrice" value="{{this.carPrice}}"/>
                 <div class="price-slider" id="carPrice-slider"></div>
             </div>
             <ul>
@@ -30,6 +30,7 @@
 
         <script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="lib/jquery-ui.js"></script>
+        <script type="text/javascript" src="lib/jquery.formatCurrency-1.4.0.min.js"></script>
         <script type="text/javascript" src="lib/handlebars.js"></script>
         <script type="text/javascript" src="lib/iscroll.js"></script>
         <script type="text/javascript" src="js/storage/ls-store.js"></script>

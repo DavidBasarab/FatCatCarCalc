@@ -13,13 +13,19 @@ var HomeView = function (theData) {
             value: theData.carPrice,
             change: function(e, ui) {
                 $('#carPrice').val(ui.value);
+                $('#carPrice').formatCurrency({
+                    roundToDecimalPlace: 0
+                });
             }
         });
     }
 
     this.render = function () {
         this.el.html(HomeView.template(theData));
-
+        var $priceInput = this.el.find('#carPrice');
+        $priceInput.formatCurrency({
+            roundToDecimalPlace: 0
+        });
         this.setUpCarSlider();
 
         return this;
