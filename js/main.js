@@ -15,6 +15,7 @@ app = {
         this.store = new LocalStorageStore(function () {
             var theData = self.store.getSavedData();
             $('body').html(new HomeView(theData).render().el);
+            self.storeData(theData);
         });
     }
 }
