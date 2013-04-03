@@ -3,9 +3,8 @@ html {
 }
 
 .price-slider {
-    margin-right: 40px;
     display: inline-block;
-    width: 60%;
+    width: 50%;
 }
 
 body {

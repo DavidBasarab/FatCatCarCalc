@@ -11,22 +11,22 @@ var HomeView = function (theData) {
             min: 0,
             step: 250,
             value: theData.carPrice,
-            change: function(e, ui) {
+            stop: function(e, ui) {
                 $('#carPrice').val(ui.value);
-                $('#carPrice').formatCurrency({
-                    roundToDecimalPlace: 0
-                });
+//                $('#carPrice').formatCurrency({
+//                    roundToDecimalPlace: 0
+//                });
             }
         });
     }
 
     this.render = function () {
         this.el.html(HomeView.template(theData));
-        var $priceInput = this.el.find('#carPrice');
-        $priceInput.formatCurrency({
-            roundToDecimalPlace: 0
-        });
-        this.setUpCarSlider();
+//        var $priceInput = this.el.find('#carPrice');
+//        $priceInput.formatCurrency({
+//            roundToDecimalPlace: 0
+//        });
+//        this.setUpCarSlider();
 
         return this;
     };
